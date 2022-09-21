@@ -1,0 +1,48 @@
+
+---- similar like pom.xml (file) ---
+Constructor in Angular is put into use to 
+    inject dependencies into the component class. 
+    It creates a new instance of the class when 
+    the compiler calls 'new MyClass ()'
+
+(Line 38)
+ value     │  !value  │  !!value
+━━━━━━━━━━━┿━━━━━━━━━━┿━━━━━━━━━━━
+ false     │ ✔ true   │   false
+ true      │   false  │ ✔ true
+ null      │ ✔ true   │   false
+ undefined │ ✔ true   │   false
+ 0         │ ✔ true   │   false
+ -0        │ ✔ true   │   false
+ 1         │   false  │ ✔ true
+ -5        │   false  │ ✔ true
+ NaN       │ ✔ true   │   false
+ ''        │ ✔ true   │   false
+ 'hello'   │   false  │ ✔ true
+
+(Line 42) console.info -> info for end users
+console.log -> dev/debug, more verbose
+
+(Line 52)File: Provides information about files and allows 
+      JavaScript in a web page to access their content.
+      --> Need to have 2-3 arguments
+    Questions:
+
+    1. On share.component.ts, 
+    
+      a. why void need to return? needed?
+                ngOnInit(): void {
+              if (!this.cameraSvc.dataUrl) {
+                this.router.navigate(['/'])
+                return
+              }
+      b. why const w is done inside onOnInIt?
+            why nor=t declare outside?
+
+      c. (property) ShareData.title?: string | undefined
+          what is ShareData in this context?
+
+    2. On share.component.html, 
+      
+      a. when to write ($event)?
+

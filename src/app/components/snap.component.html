@@ -1,0 +1,18 @@
+<table>
+    <tr>
+      <td>
+        <div class="center-it">
+          <webcam [width]="width" [trigger]="snap" (imageCapture)="snapshot($event)">
+          </webcam>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="center-it">
+          <button type="button" (click)="takePicture()">Snap</button>
+        </div>
+      </td>
+    </tr>
+  
+  </table>
