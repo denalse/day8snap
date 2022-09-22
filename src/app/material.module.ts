@@ -9,7 +9,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {  MatMenuModule } from '@angular/material/menu'
 import {  MatListModule } from '@angular/material/list'
 
-
 const matModules: any[] = [
     MatToolbarModule, MatButtonModule, MatIconModule,
     MatInputModule, MatFormFieldModule, MatSelectModule,
@@ -20,6 +19,5 @@ const matModules: any[] = [
     imports: matModules,
     exports: matModules
 })
-
 
 export class MaterialModule { }

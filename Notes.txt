@@ -37,7 +37,7 @@ console.log -> dev/debug, more verbose
                 return
               }
       b. why const w is done inside onOnInIt?
-            why nor=t declare outside?
+            why not declare outside?
 
       c. (property) ShareData.title?: string | undefined
           what is ShareData in this context?

@@ -21,7 +21,7 @@ export class ShareComponent implements OnInit {
   ngOnInit(): void { //insert business logic
     if (!this.cameraSvc.dataUrl) {
       this.router.navigate(['/'])
-      // return
+      return
     }
 
     //const is used when decalring variable
@@ -46,7 +46,8 @@ export class ShareComponent implements OnInit {
     console.info('>>>TYPE: ', b.type)
     const formValue: any = this.form.value
 
-    navigator.share( { //method?
+
+    navigator.share( { //method? returns promise
       title: formValue.title, //both is of type any
       text: formValue.caption + '.jpg', //why not caption:
       files: [ new File ( [ b ], formValue.title + '.jpg', { type: 'image/jpg' } ) ]

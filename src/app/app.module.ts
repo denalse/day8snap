@@ -11,7 +11,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 import { WebcamModule } from 'ngx-webcam';
 
-
 const appRoutes: Routes = [
   { path: '', component: SnapComponent },
   { path: 'share', component: ShareComponent },

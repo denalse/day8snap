@@ -11,7 +11,6 @@ import { CameraService } from '../camera.service';
 })
 export class SnapComponent implements OnInit {
 
-  
   snap = new Subject<void>()
   snapObs = this.snap.asObservable()
 
